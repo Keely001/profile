@@ -45,7 +45,7 @@
             modern frontends with JWT auth, hosted on AWS Amplify.
           </p>
           <div class="hero-btns">
-            <a href="#contact" class="btn-primary">    Hire Me  </a>
+            <a href="#contact" class="btn-primary"> Hire Me </a>
           </div>
         </div>
         <div class="hero-right">
@@ -81,7 +81,7 @@
 
       <div class="timeline">
         <div class="tl-item"><span>2023</span>Cloud Developer Intern</div>
-        <div class="tl-item"><span>2024</span>Full-Stack Cloud Engineer</div>
+        <div class="tl-item"><span>2023</span>Full-Stack Cloud Engineer</div>
         <div class="tl-item"><span>2025</span>Senior DevOps Engineer</div>
       </div>
     </div>
@@ -195,7 +195,7 @@
 
         <div class="cert-item">
           <img src="./badges/security-b.png" alt="AWS Security Specialty" />
-          <p>AWS Security Specialty</p>
+          <p>AWS Advanced Security</p>
         </div>
 
         <div class="cert-item">
@@ -205,7 +205,7 @@
 
         <div class="cert-item">
           <img src="./badges/KCNA-b.png" alt="Kubernetes Cloud Native Associate" />
-          <p>Kubernetes & Cloud Native</p>
+          <p>Kubernetes & Cloud Native Associate</p>
         </div>
 
         <div class="cert-item">
@@ -293,7 +293,8 @@
           </p>
           <p>
             Achieved <strong>95+ Lighthouse scores</strong>, <strong>40% faster load times</strong>,
-            and <strong>WCAG (World Wide Web Consortium) AA compliance</strong> through performance tuning, lazy loading,
+            and <strong>WCAG (World Wide Web Consortium) AA compliance</strong> through performance tuning, lazy
+            loading,
             and accessibility best practices.
           </p>
           <p>
@@ -457,13 +458,24 @@
         <div class="container">
           <h2 class="section-title" style="color: #333">Get in Touch</h2>
           <div class="contact-grid">
-            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-              <input type="text" name="name" placeholder="Name" required />
-              <input type="email" name="_replyto" placeholder="Email" required />
-              <input type="text" name="subject" placeholder="Subject" />
-              <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <!-- Contact Form with Formspree -->
+            <form class="contact-form" action="https://formspree.io/f/mldoqygw" method="POST" id="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required autocomplete="name" />
+
+              <input type="email" name="email" placeholder="Your Email" required autocomplete="email" />
+
+              <input type="text" name="subject" placeholder="Subject (e.g. Project Inquiry)" />
+
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+              <!-- Hidden field to reduce spam -->
+              <input type="text" name="_gotcha" style="display:none" />
+
               <button type="submit">Send Message</button>
             </form>
+
+            <!-- Success / Error Message -->
+            <div id="form-message" style="margin-top: 1rem; font-weight: 500;"></div>
 
             <div class="contact-info">
               <p><strong>Email:</strong> thindiuke@gmail.com</p>
@@ -541,6 +553,33 @@
           { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
         );
         fadeElements.forEach((el) => fadeObserver.observe(el));
+      </script>
+
+      <script>
+        // Formspree Submission Handler
+        const form = document.getElementById('contact-form');
+        const messageDiv = document.getElementById('form-message');
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          })
+            .then(response => {
+              if (response.ok) {
+                form.reset();
+                messageDiv.innerHTML = '<p style="color: #10b981;">Message sent! I\'ll reply within 24 hours.</p>';
+              } else {
+                messageDiv.innerHTML = '<p style="color: #ef4444;">Oops! Something went wrong. Try again or email me directly.</p>';
+              }
+            })
+            .catch(() => {
+              messageDiv.innerHTML = '<p style="color: #ef4444;">Network error. Please email me at <a href="mailto:thindiuke@gmail.com">thindiuke@gmail.com</a>.</p>';
+            });
+        });
       </script>
 </body>
 

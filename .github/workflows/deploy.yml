@@ -1,0 +1,38 @@
+name: Deploy Formspree SPA
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # ---- Inject Formspree URL into index.html ----
+      - name: Replace placeholder with secret
+        env:
+          FORMSPREE_URL: ${{ secrets.FORMSPREE_URL }}  # ← Uses your secret name
+        run: |
+          sed -i "s|{{FORMSPREE_URL}}|${FORMSPREE_URL}|g" index.html
+
+      # ---- Deploy to GitHub Pages ----
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
