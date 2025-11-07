@@ -1,519 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thindiu.K – Cloud Developer & DevOps Engineer</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thindiu.K – Cloud Developer & DevOps Engineer</title>
 
-    <link rel="stylesheet" href="./styles.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <div class="container nav-inner">
-        <div class="logo">Thindiu.K</div>
-        <div class="menu-toggle" id="menu-toggle">Menu</div>
-        <div class="nav-links" id="nav-links">
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#certs">Certifications</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+  <link rel="stylesheet" href="./styles.css" />
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">Thindiu.K</div>
+      <div class="menu-toggle" id="menu-toggle">Menu</div>
+      <div class="nav-links" id="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="fade-in">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1>Hello, I’m <span>Thindiu Keely</span></h1>
+          <p class="subtitle">Cloud Developer | DevOps Engineer</p>
+          <p>
+            Full-stack cloud engineer specializing in AWS, EKS, Terraform,
+            Fast API and React. I build secure, scalable microservices and
+            modern frontends with JWT auth, hosted on AWS Amplify.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">    Hire Me  </a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="./logo_.png" alt="Thindiu Keely - Profile" />
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <!-- Hero -->
-    <section id="hero" class="fade-in">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-left">
-            <h1>Hello, I’m <span>Thindiu Keely</span></h1>
-            <p class="subtitle">Cloud Developer | DevOps Engineer</p>
-            <p>
-              Full-stack cloud engineer specializing in AWS, EKS, Terraform,
-              Fast API and React. I build secure, scalable microservices and
-              modern frontends with JWT auth, hosted on AWS Amplify.
-            </p>
-            <div class="hero-btns">
-              <a href="#contact" class="btn-primary">Hire Me</a>
-              <a href="./Thindiu_Keely_CV.pdf" class="btn-secondary" download
-                >Download CV</a
-              >
-            </div>
+  <!-- About -->
+  <section id="about" class="fade-in">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img"></div>
+        <div class="about-text">
+          <h2>ABOUT ME</h2>
+          <p>
+            Cloud Developer with hands-on experience in AWS, Kubernetes, and
+            full-stack development. Passionate about automation, security, and
+            building production-grade systems.
+          </p>
+          <p>
+            Expert in Infrastructure as Code (terraform), CI/CD, microservices
+            (Fast API) and modern React frontends with AWS Cognito
+            authentication.
+          </p>
+        </div>
+        <div class="about-badges">
+          <div class="badge"><span>2+</span><span>Cloud & DevOps</span></div>
+          <div class="badge"><span>7+</span><span>Live Projects</span></div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item"><span>2023</span>Cloud Developer Intern</div>
+        <div class="tl-item"><span>2024</span>Full-Stack Cloud Engineer</div>
+        <div class="tl-item"><span>2025</span>Senior DevOps Engineer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="fade-in">
+    <div class="container">
+      <h2 class="section-title">SKILLS & EXPERTISE</h2>
+
+      <div class="skill-bars">
+        <div class="skill-item">
+          <div class="skill-header">
+            Front-End (React/TS) <span>92%</span>
           </div>
-          <div class="hero-right">
-            <img src="./logo_.png" alt="Thindiu Keely - Profile" />
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            Back-End (Python/Node) <span>88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">AWS Cloud <span>95%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">Kubernetes & EKS <span>90%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">Terraform & IaC <span>93%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">CI/CD & Monitoring <span>95%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="fade-in">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-img"></div>
-          <div class="about-text">
-            <h2>ABOUT ME</h2>
-            <p>
-              Cloud Developer with hands-on experience in AWS, Kubernetes, and
-              full-stack development. Passionate about automation, security, and
-              building production-grade systems.
-            </p>
-            <p>
-              Expert in Infrastructure as Code (terraform), CI/CD, microservices
-              (Fast API) and modern React frontends with AWS Cognito
-              authentication.
-            </p>
-          </div>
-          <div class="about-badges">
-            <div class="badge"><span>2+</span><span>Cloud & DevOps</span></div>
-            <div class="badge"><span>7+</span><span>Live Projects</span></div>
-          </div>
+      <div class="skill-icons">
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original-wordmark.svg"
+            alt="Argo CD" />
         </div>
-
-        <div class="timeline">
-          <div class="tl-item"><span>2023</span>Cloud Developer Intern</div>
-          <div class="tl-item"><span>2024</span>Full-Stack Cloud Engineer</div>
-          <div class="tl-item"><span>2025</span>Senior DevOps Engineer</div>
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
         </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="fade-in">
-      <div class="container">
-        <h2 class="section-title">SKILLS & EXPERTISE</h2>
-
-        <div class="skill-bars">
-          <div class="skill-item">
-            <div class="skill-header">
-              Front-End (React/TS) <span>92%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              Back-End (Python/Node) <span>88%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">AWS Cloud <span>95%</span></div>
-            <div class="skill-bar"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">Kubernetes & EKS <span>90%</span></div>
-            <div class="skill-bar"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">Terraform & IaC <span>93%</span></div>
-            <div class="skill-bar"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">CI/CD & Monitoring <span>95%</span></div>
-            <div class="skill-bar"><div class="skill-fill"></div></div>
-          </div>
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node" />
         </div>
-
-        <div class="skill-icons">
-          <div>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original-wordmark.svg"
-              alt="Argo CD"
-            />
-          </div>
-          <div>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="React"
-            />
-          </div>
-          <div>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt="Node"
-            />
-          </div>
-          <div>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-            />
-          </div>
-          <div>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
-              alt="K8s"
-            />
-          </div>
-          <div>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
-              alt="Terraform"
-            />
-          </div>
-          <div>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-              alt="Docker"
-            />
-          </div>
-          <div>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt="Git"
-            />
-          </div>
-        </div>
-
-        <div class="cloud-diagram">
+        <div>
           <img
-            src="./badges/waf.png"
-            alt="Cloud Architecture"
-            style="width: 150px; height: 130px"
-          />
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+        </div>
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="K8s" />
+        </div>
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
+            alt="Terraform" />
+        </div>
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+        </div>
+        <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
         </div>
       </div>
-    </section>
 
-    <!-- Certifications and Badges -->
-    <section id="certs" class="fade-in">
-      <div class="container">
-        <h2 class="section-title">Certificates & Badges</h2>
-        <div class="certs-grid">
-          <!-- ALX Software Engineering (keep this one) -->
-          <div class="cert-item">
-            <img
-              src="https://img.icons8.com/ios-filled/50/000000/certificate.png"
-              alt="ALX"
-            />
-            <p>ALX Software Engineering Certified</p>
-          </div>
+      <div class="cloud-diagram">
+        <img src="./badges/waf.png" alt="Cloud Architecture" style="width: 150px; height: 130px" />
+      </div>
+    </div>
+  </section>
 
-          <!-- Your Badge Images -->
-          <div class="cert-item">
-            <img src="./badges/ccp-b.png" alt="AWS Cloud Practitioner" />
-            <p>AWS Cloud Practitioner</p>
-          </div>
+  <!-- Certifications and Badges -->
+  <section id="certs" class="fade-in">
+    <div class="container">
+      <h2 class="section-title">Certificates & Badges</h2>
+      <div class="certs-grid">
+        <!-- ALX Software Engineering (keep this one) -->
+        <div class="cert-item">
+          <img src="https://img.icons8.com/ios-filled/50/000000/certificate.png" alt="ALX" />
+          <p>ALX Software Engineering Certified</p>
+        </div>
 
-          <div class="cert-item">
-            <img src="./badges/saa-bpng" alt="AWS Solutions Architect" />
-            <p>AWS Solutions Architect</p>
-          </div>
+        <!-- Your Badge Images -->
+        <div class="cert-item">
+          <img src="./badges/ccp-b.png" alt="AWS Cloud Practitioner" />
+          <p>AWS Cloud Practitioner</p>
+        </div>
 
-          <div class="cert-item">
-            <img src="./badges/security-b.png" alt="AWS Security Specialty" />
-            <p>AWS Security Specialty</p>
-          </div>
+        <div class="cert-item">
+          <img src="./badges/saa-bpng" alt="AWS Solutions Architect" />
+          <p>AWS Solutions Architect</p>
+        </div>
 
-          <div class="cert-item">
-            <img
-              src="./badges/networking-b.png"
-              alt="AWS Advanced Networking"
-            />
-            <p>AWS Advanced Networking</p>
-          </div>
+        <div class="cert-item">
+          <img src="./badges/security-b.png" alt="AWS Security Specialty" />
+          <p>AWS Security Specialty</p>
+        </div>
 
-          <div class="cert-item">
-            <img
-              src="./badges/KCNA-b.png"
-              alt="Kubernetes Cloud Native Associate"
-            />
-            <p>Kubernetes & Cloud Native</p>
-          </div>
+        <div class="cert-item">
+          <img src="./badges/networking-b.png" alt="AWS Advanced Networking" />
+          <p>AWS Advanced Networking</p>
+        </div>
 
-          <div class="cert-item">
-            <img src="./badges/informatica-b.png" alt="Informatica Certified" />
-            <p>Informatica Certified</p>
-          </div>
+        <div class="cert-item">
+          <img src="./badges/KCNA-b.png" alt="Kubernetes Cloud Native Associate" />
+          <p>Kubernetes & Cloud Native</p>
+        </div>
+
+        <div class="cert-item">
+          <img src="./badges/informatica-b.png" alt="Informatica Certified" />
+          <p>Informatica Certified</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Experience -->
-    <section id="experience" class="fade-in">
-      <div class="container">
-        <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+  <!-- Experience -->
+  <section id="experience" class="fade-in">
+    <div class="container">
+      <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
 
-        <!-- Insurance Frontend -->
-        <div class="exp-item">
-          <div class="exp-header">
-            <h3>Insurance Company Frontend (React + AWS)</h3>
-            <span class="exp-date">2024 – Present</span>
-          </div>
-          <div class="exp-body">
-            <p>
-              Built a modern, responsive frontend for a leading insurance
-              provider using
-              <strong>TypeScript, React, Material UI, and Axios</strong>.
-              Implemented secure authentication via
-              <strong>AWS Cognito</strong> with
-              <strong>JWT token flow</strong> between frontend and backend.
-            </p>
-            <p>
-              Hosted on <strong>AWS Amplify</strong> with CI/CD pipeline.
-              Achieved <strong>100% uptime</strong> and
-              <strong>fast global load times</strong> via CloudFront CDN.
-            </p>
-          </div>
-          <div class="exp-tags">
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Material UI</span>
-            <span class="tag">AWS Cognito</span>
-            <span class="tag">AWS Amplify</span>
-            <span class="tag">JWT</span>
-          </div>
-          <div class="exp-actions">
-            <a href="#">Live Demo</a>
-            <a href="#">Source Code</a>
-          </div>
+      <!-- Shinrai Technologies (Primary Role) -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>Cloud Engineer & DevOps Consultant</h3>
+          <span class="exp-date">May 2025 – Present</span>
+          <span class="exp-company">Shinrai Technologies LTD (Hybrid)</span>
         </div>
-
-        <!-- EKS Microservices -->
-        <div class="exp-item">
-          <div class="exp-header">
-            <h3>Cloud-Native Microservices on AWS EKS</h3>
-            <span class="exp-date">2024</span>
-          </div>
-          <div class="exp-body">
-            <p>
-              Deployed Python microservices in Docker containers on
-              <strong>AWS EKS</strong>. Fully automated infrastructure using
-              <strong>Terraform</strong>. Reduced downtime by
-              <strong>40%</strong> through resilient architecture and
-              auto-scaling.
-            </p>
-          </div>
-          <div class="exp-tags">
-            <span class="tag">EKS</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Terraform</span>
-            <span class="tag">Python</span>
-          </div>
-          <div class="exp-actions">
-            <a href="#">Case Study</a>
-            <a href="#">GitHub</a>
-          </div>
+        <div class="exp-body">
+          <p>
+            Architected and deployed <strong>secure, highly available cloud infrastructures</strong> using
+            <strong>AWS (EC2, RDS, S3, VPC, EKS)</strong>, achieving <strong>99.99% uptime</strong> across production
+            workloads.
+          </p>
+          <p>
+            Automated infrastructure with <strong>Terraform & CloudFormation</strong>, reducing deployment time by
+            <strong>60%</strong> and eliminating configuration drift via GitOps workflows.
+          </p>
+          <p>
+            Developed and scaled <strong>Python microservices in Docker on AWS EKS</strong>, cutting update-related
+            downtime by <strong>40%</strong> through auto-scaling and resilient design.
+          </p>
+          <p>
+            Built <strong>CI/CD pipelines with GitHub Actions & Jenkins</strong>, shortening release cycles by
+            <strong>50%</strong>. Integrated <strong>Prometheus/Grafana</strong> to reduce MTTR by <strong>55%</strong>.
+          </p>
+          <p>
+            Enhanced security with <strong>IAM policies, VPCs, NACLs, and encryption</strong>, mitigating
+            unauthorized access risks by <strong>90%</strong>.
+          </p>
         </div>
-
-        <!-- CI/CD Pipeline -->
-        <div class="exp-item">
-          <div class="exp-header">
-            <h3>GitHub Actions CI/CD Pipeline</h3>
-            <span class="exp-date">2024</span>
-          </div>
-          <div class="exp-body">
-            <p>
-              Designed and implemented automated testing, build, and deployment
-              workflows using <strong>GitHub Actions</strong>. Integrated with
-              <strong>Prometheus</strong> for real-time alerts. Cut release time
-              by <strong>50%</strong>.
-            </p>
-          </div>
-          <div class="exp-tags">
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">Jenkins</span>
-            <span class="tag">Prometheus</span>
-            <span class="tag">CI/CD</span>
-          </div>
-          <div class="exp-actions">
-            <a href="#">Case Study</a>
-            <a href="#">GitHub</a>
-          </div>
+        <div class="exp-tags">
+          <span class="tag">AWS EKS</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">Python</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Prometheus</span>
+          <span class="tag">Grafana</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">IAM</span>
+        </div>
+        <div class="exp-actions">
+          <a href="./Thindiu_Keely_CV.pdf" download>View Full CV</a>
+          <a href="https://linkedin.com/in/thindiukeely" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="fade-in">
-      <div class="container">
-        <h2 class="section-title">FEATURED PROJECTS</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-img" data-title="Insurance Frontend"></div>
-            <div class="project-body">
-              <h3>Insurance Company Web App</h3>
-              <p>
-                Secure, scalable frontend with JWT auth, built in React +
-                TypeScript. Hosted on AWS Amplify.
-              </p>
-              <div class="project-tags">
-                <span class="tag">React</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">AWS Amplify</span>
-                <span class="tag">Cognito</span>
+      <!-- Freelance Full-Stack Developer -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>Freelance Full-Stack Developer</h3>
+          <span class="exp-date">Feb 2023 – Present</span>
+        </div>
+        <div class="exp-body">
+          <p>
+            Designed and delivered <strong>end-to-end, production-grade web applications</strong> using
+            <strong>React + TypeScript</strong> frontend and <strong>FastAPI (Python)</strong> backend microservices
+            for clients in insurance, fintech, and SaaS.
+          </p>
+          <p>
+            Built <strong>secure RESTful APIs with FastAPI</strong>, implementing
+            <strong>JWT authentication, role-based access control (RBAC)</strong>, and
+            <strong>automatic OpenAPI/Swagger documentation</strong>. Integrated with
+            <strong>AWS Cognito</strong> for SSO and token refresh flows.
+          </p>
+          <p>
+            Hosted frontends on <strong>AWS Amplify + CloudFront</strong> and deployed
+            <strong>FastAPI services via Docker on AWS ECS/Fargate</strong> with automated
+            CI/CD pipelines using <strong>GitHub Actions</strong>.
+          </p>
+          <p>
+            Achieved <strong>95+ Lighthouse scores</strong>, <strong>40% faster load times</strong>,
+            and <strong>WCAG (World Wide Web Consortium) AA compliance</strong> through performance tuning, lazy loading,
+            and accessibility best practices.
+          </p>
+          <p>
+            Conducted user testing, A/B experiments, and iterative UX design — increasing
+            client-reported satisfaction and conversion rates by <strong>25%</strong>.
+          </p>
+        </div>
+        <div class="exp-tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Python</span>
+          <span class="tag">JWT</span>
+          <span class="tag">AWS Cognito</span>
+          <span class="tag">AWS Amplify</span>
+          <span class="tag">ECS/Fargate</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">WCAG(World Wide Web Consortium)</span>
+        </div>
+        <div class="exp-actions">
+          <a href="#projects">View Projects</a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub Portfolio</a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="fade-in">
+        <div class="container">
+          <h2 class="section-title">FEATURED PROJECTS</h2>
+
+          <div class="projects-grid">
+
+            <!-- 1. Insurance Frontend -->
+            <div class="project-card">
+              <div class="project-img" data-title="Insurance Frontend"></div>
+              <div class="project-body">
+                <h3>Secure Insurance Portal – React + AWS Amplify</h3>
+
+                <p>
+                  Built a <strong>responsive, production-grade insurance web app</strong> with
+                  <strong>TypeScript, React, Material UI, and Axios</strong>. Implemented
+                  <strong>AWS Cognito JWT authentication</strong> (masked OTP, refresh-token flow).
+                </p>
+                <p>
+                  Hosted on <strong>AWS Amplify</strong> with GitHub-Actions CI/CD.
+                  Achieved <strong>100 % uptime</strong> and <strong>sub-2 s global load times</strong>
+                  via <strong>CloudFront CDN</strong> + edge caching.
+                </p>
+                <p>
+                  WCAG-AA compliant, mobile-first UI. Improved form conversion by
+                  <strong>30 %</strong> through A/B testing and UX iteration.
+                </p>
+
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Material UI</span>
+                  <span class="tag">AWS Cognito</span>
+                  <span class="tag">AWS Amplify</span>
+                  <span class="tag">JWT</span>
+                  <span class="tag">CloudFront</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://your-insurance-app.com" target="_blank" rel="noopener">Live Demo</a>
+                  <a href="https://github.com/yourusername/insurance-frontend" target="_blank" rel="noopener">GitHub</a>
+                </div>
               </div>
-              <div class="project-actions">
-                <a href="#">Live Demo</a>
-                <a href="#">GitHub</a>
+            </div>
+
+            <!-- 2. EKS Microservices -->
+            <div class="project-card">
+              <div class="project-img" data-title="EKS Microservices"></div>
+              <div class="project-body">
+                <h3>Cloud-Native Microservices on AWS EKS</h3>
+
+                <p>
+                  Deployed a <strong>5-component fleet-tracking platform</strong> using
+                  <strong>Python (FastAPI), Docker, and AWS EKS</strong>. Full IaC with
+                  <strong>Terraform</strong> (modules, S3 + DynamoDB remote state).
+                </p>
+                <p>
+                  Cut downtime by <strong>40 %</strong> via <strong>HPA, Pod Disruption Budgets,
+                    and blue-green rollouts</strong>. Scaled from 2 → 20 pods under load with
+                  <strong>zero failed requests</strong>.
+                </p>
+                <p>
+                  Configured <strong>EBS gp2 PVs</strong> for MongoDB StatefulSet,
+                  <strong>ClusterIP service mesh</strong>, and <strong>ALB Ingress</strong>.
+                  Enforced RBAC, Pod Security Contexts, and Network Policies.
+                </p>
+
+                <div class="project-tags">
+                  <span class="tag">AWS EKS</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Terraform</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">HPA</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://your-portfolio.com/eks-fleet" target="_blank" rel="noopener">Case Study</a>
+                  <a href="https://github.com/yourusername/eks-fleet" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. CI/CD + Observability -->
+            <div class="project-card">
+              <div class="project-img" data-title="CI/CD Automation"></div>
+              <div class="project-body">
+                <h3>End-to-End CI/CD Pipeline for Fleet Tracking on EKS</h3>
+
+                <p>
+                  Engineered a <strong>GitHub Actions CI/CD pipeline</strong> that deploys the
+                  5-microservice system to <strong>AWS EKS</strong> in <strong>under 8 minutes</strong>
+                  (from 2+ hours manually) – a <strong>93 % faster release velocity</strong>.
+                </p>
+                <p>
+                  Integrated <strong>unit/integration tests, Trivy scanning, linting</strong>,
+                  and <strong>OIDC IAM Roles</strong> (no long-lived secrets). Enabled
+                  <strong>zero-downtime blue-green sync via ArgoCD + Kustomize</strong>.
+                </p>
+                <p>
+                  Full observability stack: <strong>Prometheus + Grafana</strong> for metrics,
+                  <strong>ELK (Fluentd → Elasticsearch → Kibana)</strong> for logs.
+                  Reduced <strong>MTTR by 60 %</strong> with AlertManager → Slack/Email.
+                </p>
+                <p>
+                  Used <strong>StatefulSets, DaemonSets, Node Exporter, kube-state-metrics</strong>,
+                  and custom Grafana dashboards.
+                </p>
+
+                <div class="project-tags">
+                  <span class="tag">GitHub Actions</span>
+                  <span class="tag">AWS EKS</span>
+                  <span class="tag">Kubernetes</span>
+                  <span class="tag">Prometheus</span>
+                  <span class="tag">Grafana</span>
+                  <span class="tag">ELK Stack</span>
+                  <span class="tag">ArgoCD</span>
+                  <span class="tag">OIDC</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://your-portfolio.com/fleet-cicd" target="_blank" rel="noopener">Case Study</a>
+                  <a href="https://github.com/yourusername/fleet-eks-cicd" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="fade-in">
+        <div class="container">
+          <h2 class="section-title" style="color: #333">Get in Touch</h2>
+          <div class="contact-grid">
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="_replyto" placeholder="Email" required />
+              <input type="text" name="subject" placeholder="Subject" />
+              <textarea name="message" rows="5" placeholder="Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+              <p><strong>Email:</strong> thindiuke@gmail.com</p>
+              <p><strong>Phone:</strong> +254718 117 250</p>
+              <p><strong>Location:</strong> Nairobi, Kenya</p>
+              <div class="social-links">
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn" /></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="GitHub" /></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+                    alt="Twitter" /></a>
               </div>
             </div>
           </div>
-
-          <div class="project-card">
-            <div class="project-img" data-title="EKS Microservices"></div>
-            <div class="project-body">
-              <h3>Cloud-Native Microservices on EKS</h3>
-              <p>
-                Deployed Python services in Docker on EKS. Automated with
-                Terraform. Achieved <strong>40% less downtime</strong>.
-              </p>
-              <div class="project-tags">
-                <span class="tag">EKS</span>
-                <span class="tag">Docker</span>
-                <span class="tag">Terraform</span>
-                <span class="tag">Python</span>
-              </div>
-              <div class="project-actions">
-                <a href="#">Case Study</a>
-                <a href="#">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-img" data-title="CI/CD Automation"></div>
-            <div class="project-body">
-              <h3>GitHub Actions CI/CD Pipeline</h3>
-              <p>
-                Automated testing, build, deploy →
-                <strong>50% faster releases</strong>. Integrated with Prometheus
-                alerts.
-              </p>
-              <div class="project-tags">
-                <span class="tag">GitHub Actions</span>
-                <span class="tag">Jenkins</span>
-                <span class="tag">Prometheus</span>
-              </div>
-              <div class="project-actions">
-                <a href="#">Case Study</a>
-                <a href="#">GitHub</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <section id="contact" class="fade-in">
-      <div class="container">
-        <h2 class="section-title" style="color: #333">Get in Touch</h2>
-        <div class="contact-grid">
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/your-form-id"
-            method="POST"
-          >
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="email" name="_replyto" placeholder="Email" required />
-            <input type="text" name="subject" placeholder="Subject" />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Message"
-              required
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
+      <footer>
+        <p>
+          © 2025 Thindiu.K – Cloud Developer & DevOps Engineer. All rights
+          reserved.
+        </p>
+      </footer>
 
-          <div class="contact-info">
-            <p><strong>Email:</strong> thindiuke@gmail.com</p>
-            <p><strong>Phone:</strong> +254718 117 250</p>
-            <p><strong>Location:</strong> Nairobi, Kenya</p>
-            <div class="social-links">
-              <a href="#"
-                ><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                  alt="LinkedIn"
-              /></a>
-              <a href="#"
-                ><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                  alt="GitHub"
-              /></a>
-              <a href="#"
-                ><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
-                  alt="Twitter"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <script>
+        // Mobile menu
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+        menuToggle.addEventListener("click", () =>
+          navLinks.classList.toggle("active")
+        );
 
-    <footer>
-      <p>
-        © 2025 Thindiu.K – Cloud Developer & DevOps Engineer. All rights
-        reserved.
-      </p>
-    </footer>
-
-    <script>
-      // Mobile menu
-      const menuToggle = document.getElementById("menu-toggle");
-      const navLinks = document.getElementById("nav-links");
-      menuToggle.addEventListener("click", () =>
-        navLinks.classList.toggle("active")
-      );
-
-      // Smooth scroll
-      document.querySelectorAll('a[href^="#"]').forEach((a) => {
-        a.addEventListener("click", (e) => {
-          e.preventDefault();
-          const target = document.querySelector(a.getAttribute("href"));
-          target.scrollIntoView({ behavior: "smooth" });
-          if (navLinks.classList.contains("active"))
-            navLinks.classList.remove("active");
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach((a) => {
+          a.addEventListener("click", (e) => {
+            e.preventDefault();
+            const target = document.querySelector(a.getAttribute("href"));
+            target.scrollIntoView({ behavior: "smooth" });
+            if (navLinks.classList.contains("active"))
+              navLinks.classList.remove("active");
+          });
         });
-      });
 
-      // Skill bars animation
-      const skillBars = document.querySelectorAll(".skill-fill");
-      const skillObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const bar = entry.target;
-              const percent =
-                bar.parentElement.previousElementSibling.querySelector(
-                  "span"
-                ).textContent;
-              bar.style.width = percent;
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
-      skillBars.forEach((bar) => skillObserver.observe(bar));
+        // Skill bars animation
+        const skillBars = document.querySelectorAll(".skill-fill");
+        const skillObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const bar = entry.target;
+                const percent =
+                  bar.parentElement.previousElementSibling.querySelector(
+                    "span"
+                  ).textContent;
+                bar.style.width = percent;
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+        skillBars.forEach((bar) => skillObserver.observe(bar));
 
-      // Fade-in on scroll
-      const fadeElements = document.querySelectorAll(".fade-in");
-      const fadeObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              fadeObserver.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
-      );
-      fadeElements.forEach((el) => fadeObserver.observe(el));
-    </script>
-  </body>
+        // Fade-in on scroll
+        const fadeElements = document.querySelectorAll(".fade-in");
+        const fadeObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                fadeObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
+        );
+        fadeElements.forEach((el) => fadeObserver.observe(el));
+      </script>
+</body>
+
 </html>
